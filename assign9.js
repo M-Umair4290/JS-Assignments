@@ -1,8 +1,7 @@
-let city = prompt("Enter your city name: ");
+var city = prompt("Enter your city name: ");
 if (city == "Karachi") {
     alert("Welcome to city of lights");
 }
-
 
 
 let gender = prompt("Enter your gender: ");
@@ -101,19 +100,19 @@ var marksObtained = subject1_Marks + subject2_Marks + subject3_Marks;
 var percentage = (marksObtained / totalMarks) * 100;
 
 if (percentage >= 80) {
-    document.write("Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: A-one" + "\n Remarks: Excellent");
+    document.write("<br> Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: A-one" + "\n Remarks: Excellent");
 }
 
 else if (percentage >= 70) {
-    document.write("Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: A" + "\n Remarks: Good");
+    document.write("<br> Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: A" + "\n Remarks: Good");
 }
 
 else if (percentage >= 60) {
-    document.write("Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: B" + "\n Remarks: You need to improve");
+    document.write("<br> Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: B" + "\n Remarks: You need to improve");
 }
 
 else {
-    document.write("Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: Fail" + "\n Remarks: Sorry");
+    document.write("<br> Marks Sheet \n\n Total marks: " + totalMarks + "\n Marks obtained: " + marksObtained + "\n Percentage: " + percentage + "% \n Grade: Fail" + "\n Remarks: Sorry");
 }
 
 
@@ -122,15 +121,15 @@ var secretNum = 5;
 var guess = parseInt(prompt("Guess a number between 1 and 10:"));
 
 if (guess === secretNum) {
-    document.write("Bingo! Correct answer.");
+    document.write("<br> Bingo! Correct answer.");
 }
 
 else if (guess === secretNum - 1) {
-    document.write("Close enough to the correct answer.");
+    document.write("<br> Close enough to the correct answer.");
 }
 
 else {
-    document.write("Wrong answer. The secret number was " + secretNum + ".");
+    document.write("<br> Wrong answer. The secret number was " + secretNum + ".");
 }
 
 
@@ -138,11 +137,11 @@ else {
 var number = parseInt(prompt("Enter a number:"));
 
 if (number % 3 === 0) {
-    document.write("The number " + number + " is divisible by 3.");
+    document.write("<br> The number " + number + " is divisible by 3.");
 }
 
 else {
-    document.write("The number " + number + " is not divisible by 3.");
+    document.write("<br> The number " + number + " is not divisible by 3.");
 }
 
 
@@ -151,11 +150,11 @@ else {
 var myNumber = parseInt(prompt("Enter a number:"));
 
 if (myNumber % 2 === 0) {
-    document.write("The number " + myNumber + " is even.");
+    document.write("<br> The number " + myNumber + " is even.");
 }
 
 else {
-    document.write("The number " + myNumber + " is odd.");
+    document.write("<br> The number " + myNumber + " is odd.");
 }
 
 
@@ -164,24 +163,24 @@ else {
 var temperature = parseInt(prompt("Enter the temperature in Celsius:"));
 
 if (temperature > 40) {
-    document.write("It is too hot outside.");
+    document.write("<br> It is too hot outside.");
 }
 
 else if (temperature > 30) {
-    document.write("The weather today is Normal.");
+    document.write("<br> The weather today is Normal.");
 
 }
 
 else if (temperature > 20) {
-    document.write("Today's weather is cool.");
+    document.write("<br> Today's weather is cool.");
 }
 
 else if (temperature > 10) {
-    document.write("OMG! Today's weather is so cool!");
+    document.write("<br> OMG! Today's weather is so cool!");
 }
 
 else {
-    document.write("It's very cold outside!");
+    document.write("<br> It's very cold outside!");
 }
 
 
@@ -203,8 +202,7 @@ if (operation === "+") {
 } else if (operation === "%") {
     result = firstNumber % secondNumber;
 } else {
-    alert("Invalid operation. Please enter +, -, *, /, or %.");
-    return;
+    document.write("<br> Invalid operation. Please enter +, -, *, /, or %.");
 }
 
-document.write("The result is: " + result);
+document.write("<br> The result is: " + result);
